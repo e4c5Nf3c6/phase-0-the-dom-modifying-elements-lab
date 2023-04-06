@@ -1,8 +1,6 @@
-const element = document.getElementById("main");
-element.removeAttribute('id');
+let main = document.getElementById("main");
+main.remove()
 
-const newHeader = document.createElement('h1');
-newHeader.setAttribute('id','victory');
+let newHeader = document.createElement('h1');
+newHeader.id = "victory";
 newHeader.textContent = "Maria is the champion";
-
-document.body.append(newHeader);
